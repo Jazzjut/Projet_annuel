@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : localhost
--- Généré le : jeu. 18 jan. 2024 à 18:47
+-- Généré le : jeu. 14 mars 2024 à 17:54
 -- Version du serveur : 8.0.27
 -- Version de PHP : 8.0.12
 
@@ -24,39 +24,17 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Structure de la table `Admin`
---
-
-CREATE TABLE `Admin` (
-  `adminID` int NOT NULL,
-  `pseudoA` int NOT NULL,
-  `nomA` varchar(20) CHARACTER SET latin1 COLLATE latin1_general_ci NOT NULL,
-  `prenomA` varchar(20) CHARACTER SET latin1 COLLATE latin1_general_ci NOT NULL,
-  `mailA` varchar(50) CHARACTER SET latin1 COLLATE latin1_general_ci NOT NULL,
-  `telA` int NOT NULL,
-  `mdpA` varchar(32) CHARACTER SET latin1 COLLATE latin1_general_ci NOT NULL,
-  `dateNA` int NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_general_ci;
-
--- --------------------------------------------------------
-
---
 -- Structure de la table `Client`
 --
 
 CREATE TABLE `Client` (
-  `ClientID` int NOT NULL,
+  `mailC` varchar(50) CHARACTER SET latin1 COLLATE latin1_general_ci NOT NULL,
   `pseudoC` varchar(20) CHARACTER SET latin1 COLLATE latin1_general_ci NOT NULL,
   `nomC` varchar(30) CHARACTER SET latin1 COLLATE latin1_general_ci NOT NULL,
   `prenomC` varchar(30) CHARACTER SET latin1 COLLATE latin1_general_ci NOT NULL,
-  `mailC` varchar(50) CHARACTER SET latin1 COLLATE latin1_general_ci NOT NULL,
-  `telC` int NOT NULL,
+  `telC` varchar(10) CHARACTER SET latin1 COLLATE latin1_general_ci NOT NULL,
   `mdpC` varchar(60) CHARACTER SET latin1 COLLATE latin1_general_ci NOT NULL,
-  `adresseC` varchar(50) CHARACTER SET latin1 COLLATE latin1_general_ci NOT NULL,
-  `code_postalC` int NOT NULL,
-  `villeC` varchar(20) CHARACTER SET latin1 COLLATE latin1_general_ci NOT NULL,
-  `dateNC` int NOT NULL,
-  `factureID` int DEFAULT NULL
+  `factureID` int NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_general_ci;
 
 -- --------------------------------------------------------
@@ -66,48 +44,46 @@ CREATE TABLE `Client` (
 --
 
 CREATE TABLE `Facture` (
-  `FactureID` int NOT NULL,
-  `NomF` varchar(20) CHARACTER SET latin1 COLLATE latin1_general_ci NOT NULL,
-  `PrenomF` varchar(20) CHARACTER SET latin1 COLLATE latin1_general_ci NOT NULL,
-  `Ncarte` int NOT NULL,
-  `Dateexp` int NOT NULL,
-  `CodeV` int NOT NULL,
-  `clienteID` int NOT NULL
+  `factureID` int NOT NULL,
+  `ncarte` int DEFAULT NULL,
+  `dateExp` date DEFAULT NULL,
+  `codeV` int DEFAULT NULL,
+  `montant` int DEFAULT NULL,
+  `dateDon` date DEFAULT NULL,
+  `mailC` varchar(50) COLLATE latin1_general_ci NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_general_ci;
 
 -- --------------------------------------------------------
 
 --
--- Structure de la table `FormA`
+-- Structure de la table `FormDemandeA`
 --
 
-CREATE TABLE `FormA` (
-  `formAID` int NOT NULL,
-  `dateA` int NOT NULL,
-  `raisonA` varchar(100) CHARACTER SET latin1 COLLATE latin1_general_ci NOT NULL,
-  `enf` int NOT NULL,
-  `nbh` int NOT NULL,
-  `ext` varchar(3) CHARACTER SET latin1 COLLATE latin1_general_ci NOT NULL,
-  `etatA` enum('en cours de traitement','adopté','adoption refusé','envoyé') CHARACTER SET latin1 COLLATE latin1_general_ci NOT NULL,
-  `clientID` int NOT NULL,
-  `adminID` int NOT NULL,
+CREATE TABLE `FormDemandeA` (
+  `formDemandeAID` int NOT NULL,
+  `dateDemandeA` date NOT NULL,
+  `raisonDemandeA` varchar(100) CHARACTER SET latin1 COLLATE latin1_general_ci NOT NULL,
+  `nbEnf` int NOT NULL,
+  `nbHSeul` int NOT NULL,
+  `ext` bit(1) NOT NULL,
+  `etatDemandeA` enum('en cours de traitement','adopté','adoption refusé','envoyé') CHARACTER SET latin1 COLLATE latin1_general_ci NOT NULL,
+  `mailC` varchar(50) COLLATE latin1_general_ci NOT NULL,
   `petID` int NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_general_ci;
 
 -- --------------------------------------------------------
 
 --
--- Structure de la table `FormR`
+-- Structure de la table `FormMiseA`
 --
 
-CREATE TABLE `FormR` (
-  `formRID` int NOT NULL,
-  `dateR` int NOT NULL,
-  `raisonR` varchar(100) CHARACTER SET latin1 COLLATE latin1_general_ci NOT NULL,
-  `etatR` enum('en cours de traitement','adopté','adoption refusé','proposition envoyé') CHARACTER SET latin1 COLLATE latin1_general_ci NOT NULL,
-  `clientID` int NOT NULL,
-  `petID` int NOT NULL,
-  `adminID` int NOT NULL
+CREATE TABLE `FormMiseA` (
+  `formMiseAID` int NOT NULL,
+  `dateMiseA` date NOT NULL,
+  `raisonMiseA` varchar(100) CHARACTER SET latin1 COLLATE latin1_general_ci NOT NULL,
+  `etatMiseA` enum('en cours de traitement','adopté','adoption refusé','proposition envoyé') CHARACTER SET latin1 COLLATE latin1_general_ci NOT NULL,
+  `mailC` varchar(50) COLLATE latin1_general_ci NOT NULL,
+  `petID` int NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_general_ci;
 
 -- --------------------------------------------------------
@@ -119,9 +95,7 @@ CREATE TABLE `FormR` (
 CREATE TABLE `Localisation` (
   `numsociale` int NOT NULL,
   `telL` int NOT NULL,
-  `villeL` varchar(20) CHARACTER SET latin1 COLLATE latin1_general_ci NOT NULL,
-  `adresseL` varchar(50) CHARACTER SET latin1 COLLATE latin1_general_ci NOT NULL,
-  `code_postaleL` int NOT NULL
+  `villeL` varchar(20) CHARACTER SET latin1 COLLATE latin1_general_ci NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_general_ci;
 
 -- --------------------------------------------------------
@@ -133,14 +107,14 @@ CREATE TABLE `Localisation` (
 CREATE TABLE `Pet` (
   `petID` int NOT NULL,
   `prenomP` varchar(20) CHARACTER SET latin1 COLLATE latin1_general_ci NOT NULL,
-  `especes` varchar(50) CHARACTER SET latin1 COLLATE latin1_general_ci NOT NULL,
+  `espece` varchar(50) CHARACTER SET latin1 COLLATE latin1_general_ci NOT NULL,
   `sexeP` tinyint(1) NOT NULL,
   `locaP` int NOT NULL,
-  `races` varchar(20) CHARACTER SET latin1 COLLATE latin1_general_ci NOT NULL,
-  `dateNP` int NOT NULL,
+  `race` varchar(20) CHARACTER SET latin1 COLLATE latin1_general_ci NOT NULL,
+  `dateNP` date NOT NULL,
   `etatP` enum('en cours de traitement','adopté','à adopter') CHARACTER SET latin1 COLLATE latin1_general_ci NOT NULL,
-  `formAID` int DEFAULT NULL,
-  `formRID` int DEFAULT NULL
+  `formDemandeAID` int DEFAULT NULL,
+  `formMiseAID` int DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_general_ci;
 
 -- --------------------------------------------------------
@@ -152,10 +126,9 @@ CREATE TABLE `Pet` (
 CREATE TABLE `RDV` (
   `numRDV` int NOT NULL,
   `dateRDV` int NOT NULL,
-  `formAID` int NOT NULL,
-  `formRID` int NOT NULL,
-  `numsociale` int NOT NULL,
-  `adminID` int NOT NULL
+  `formDemandeAID` int NOT NULL,
+  `formMiseAID` int NOT NULL,
+  `numsociale` int NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_general_ci;
 
 --
@@ -163,44 +136,35 @@ CREATE TABLE `RDV` (
 --
 
 --
--- Index pour la table `Admin`
---
-ALTER TABLE `Admin`
-  ADD PRIMARY KEY (`adminID`),
-  ADD KEY `pseudoA` (`pseudoA`);
-
---
 -- Index pour la table `Client`
 --
 ALTER TABLE `Client`
-  ADD PRIMARY KEY (`ClientID`),
-  ADD KEY `pseudoC` (`pseudoC`),
-  ADD KEY `factureID` (`factureID`);
+  ADD PRIMARY KEY (`mailC`),
+  ADD UNIQUE KEY `pseudoC` (`pseudoC`),
+  ADD KEY `client_FK1` (`factureID`);
 
 --
 -- Index pour la table `Facture`
 --
 ALTER TABLE `Facture`
-  ADD PRIMARY KEY (`FactureID`),
-  ADD KEY `clienteID` (`clienteID`);
+  ADD PRIMARY KEY (`factureID`),
+  ADD KEY `facture_FK1` (`mailC`);
 
 --
--- Index pour la table `FormA`
+-- Index pour la table `FormDemandeA`
 --
-ALTER TABLE `FormA`
-  ADD PRIMARY KEY (`formAID`),
-  ADD KEY `clientID` (`clientID`),
-  ADD KEY `adminID` (`adminID`),
-  ADD KEY `petID` (`petID`);
+ALTER TABLE `FormDemandeA`
+  ADD PRIMARY KEY (`formDemandeAID`),
+  ADD KEY `formdemandea_FK1` (`mailC`),
+  ADD KEY `formdemandea_FK2` (`petID`);
 
 --
--- Index pour la table `FormR`
+-- Index pour la table `FormMiseA`
 --
-ALTER TABLE `FormR`
-  ADD PRIMARY KEY (`formRID`),
-  ADD KEY `clientID` (`clientID`),
-  ADD KEY `petID` (`petID`),
-  ADD KEY `adminID` (`adminID`);
+ALTER TABLE `FormMiseA`
+  ADD PRIMARY KEY (`formMiseAID`),
+  ADD KEY `formmisea_FK1` (`mailC`),
+  ADD KEY `formmisea_FK2` (`petID`);
 
 --
 -- Index pour la table `Localisation`
@@ -213,28 +177,17 @@ ALTER TABLE `Localisation`
 --
 ALTER TABLE `Pet`
   ADD PRIMARY KEY (`petID`),
-  ADD KEY `formAID` (`formAID`),
-  ADD KEY `formRID` (`formRID`);
+  ADD KEY `pet_FK1` (`formDemandeAID`),
+  ADD KEY `pet_FK2` (`formMiseAID`);
 
 --
 -- Index pour la table `RDV`
 --
 ALTER TABLE `RDV`
   ADD PRIMARY KEY (`numRDV`),
-  ADD KEY `formAID` (`formAID`),
-  ADD KEY `formRID` (`formRID`),
-  ADD KEY `numsociale` (`numsociale`),
-  ADD KEY `adminID` (`adminID`);
-
---
--- AUTO_INCREMENT pour les tables déchargées
---
-
---
--- AUTO_INCREMENT pour la table `Client`
---
-ALTER TABLE `Client`
-  MODIFY `ClientID` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  ADD KEY `rdv_FK1` (`formDemandeAID`),
+  ADD KEY `rdv_FK2` (`formMiseAID`),
+  ADD KEY `rdv_FK3` (`numsociale`);
 
 --
 -- Contraintes pour les tables déchargées
@@ -244,37 +197,42 @@ ALTER TABLE `Client`
 -- Contraintes pour la table `Client`
 --
 ALTER TABLE `Client`
-  ADD CONSTRAINT `Client_ibfk_1` FOREIGN KEY (`factureID`) REFERENCES `Facture` (`FactureID`);
+  ADD CONSTRAINT `client_FK1` FOREIGN KEY (`factureID`) REFERENCES `Facture` (`factureID`) ON DELETE RESTRICT ON UPDATE RESTRICT;
 
 --
--- Contraintes pour la table `FormA`
+-- Contraintes pour la table `Facture`
 --
-ALTER TABLE `FormA`
-  ADD CONSTRAINT `FormA_ibfk_2` FOREIGN KEY (`adminID`) REFERENCES `Admin` (`adminID`),
-  ADD CONSTRAINT `FormA_ibfk_3` FOREIGN KEY (`petID`) REFERENCES `Pet` (`petID`);
+ALTER TABLE `Facture`
+  ADD CONSTRAINT `facture_FK1` FOREIGN KEY (`mailC`) REFERENCES `Client` (`mailC`) ON DELETE RESTRICT ON UPDATE RESTRICT;
 
 --
--- Contraintes pour la table `FormR`
+-- Contraintes pour la table `FormDemandeA`
 --
-ALTER TABLE `FormR`
-  ADD CONSTRAINT `FormR_ibfk_1` FOREIGN KEY (`adminID`) REFERENCES `Admin` (`adminID`),
-  ADD CONSTRAINT `FormR_ibfk_2` FOREIGN KEY (`petID`) REFERENCES `Pet` (`petID`);
+ALTER TABLE `FormDemandeA`
+  ADD CONSTRAINT `formdemandea_FK1` FOREIGN KEY (`mailC`) REFERENCES `Client` (`mailC`) ON DELETE RESTRICT ON UPDATE RESTRICT,
+  ADD CONSTRAINT `formdemandea_FK2` FOREIGN KEY (`petID`) REFERENCES `Pet` (`petID`) ON DELETE RESTRICT ON UPDATE RESTRICT;
+
+--
+-- Contraintes pour la table `FormMiseA`
+--
+ALTER TABLE `FormMiseA`
+  ADD CONSTRAINT `formmisea_FK1` FOREIGN KEY (`mailC`) REFERENCES `Client` (`mailC`) ON DELETE RESTRICT ON UPDATE RESTRICT,
+  ADD CONSTRAINT `formmisea_FK2` FOREIGN KEY (`petID`) REFERENCES `Pet` (`petID`) ON DELETE RESTRICT ON UPDATE RESTRICT;
 
 --
 -- Contraintes pour la table `Pet`
 --
 ALTER TABLE `Pet`
-  ADD CONSTRAINT `Pet_ibfk_1` FOREIGN KEY (`formAID`) REFERENCES `FormA` (`formAID`),
-  ADD CONSTRAINT `Pet_ibfk_2` FOREIGN KEY (`formRID`) REFERENCES `FormR` (`formRID`);
+  ADD CONSTRAINT `pet_FK1` FOREIGN KEY (`formDemandeAID`) REFERENCES `FormDemandeA` (`formDemandeAID`) ON DELETE RESTRICT ON UPDATE RESTRICT,
+  ADD CONSTRAINT `pet_FK2` FOREIGN KEY (`formMiseAID`) REFERENCES `FormMiseA` (`formMiseAID`) ON DELETE RESTRICT ON UPDATE RESTRICT;
 
 --
 -- Contraintes pour la table `RDV`
 --
 ALTER TABLE `RDV`
-  ADD CONSTRAINT `RDV_ibfk_1` FOREIGN KEY (`adminID`) REFERENCES `Admin` (`adminID`),
-  ADD CONSTRAINT `RDV_ibfk_2` FOREIGN KEY (`numsociale`) REFERENCES `Localisation` (`numsociale`),
-  ADD CONSTRAINT `RDV_ibfk_3` FOREIGN KEY (`formAID`) REFERENCES `FormA` (`formAID`),
-  ADD CONSTRAINT `RDV_ibfk_4` FOREIGN KEY (`formRID`) REFERENCES `FormR` (`formRID`);
+  ADD CONSTRAINT `rdv_FK1` FOREIGN KEY (`formDemandeAID`) REFERENCES `FormDemandeA` (`formDemandeAID`) ON DELETE RESTRICT ON UPDATE RESTRICT,
+  ADD CONSTRAINT `rdv_FK2` FOREIGN KEY (`formMiseAID`) REFERENCES `FormMiseA` (`formMiseAID`) ON DELETE RESTRICT ON UPDATE RESTRICT,
+  ADD CONSTRAINT `rdv_FK3` FOREIGN KEY (`numsociale`) REFERENCES `Localisation` (`numsociale`) ON DELETE RESTRICT ON UPDATE RESTRICT;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
