@@ -1,0 +1,169 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%; 
+    background-color: #fab01f;
+}
+
+.container {
+    display: flex;
+    height: 100%;
+}
+
+.partie-gauche {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centrage horizontal */
+    justify-content: flex-start; /* Alignement en haut */
+    width: fit-content; /* Ajustement à la taille du contenu */
+    margin-right: 10px; /* Marge à droite */
+    padding-top: 10px; /* Ajout d'un espace en haut */
+    margin-left: 10px;
+}
+
+.logo img {
+    max-width: 200px; /* Largeur maximale du logo */
+    max-height: 100%; /* Hauteur maximale du logo */
+    margin-left: 10px;
+}
+
+.bouton a {
+    text-decoration: none; /* Suppression du souligné des liens */
+}
+
+.bouton button {
+    display: block;
+    background-color: #fef6e6;
+    padding: 10px;
+    width: 200px;
+    cursor: pointer;
+    margin-bottom: 20px; /* Espacement entre les boutons */
+    border: none;
+    border-radius: 15px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 15px;
+    letter-spacing: 1px;
+}
+
+.partie-droite {
+    flex: 1;  /* La partie droite prend tout l'espace restant */
+    background-image: url("Accueil.png");
+    background-size: cover;
+    background-position: center;
+}
+/* style mon compte */
+
+
+.formulaire {/*conteneur du formulaire de connexion et inscription*/
+    max-width: 400px;/*limite la largeur du conteneur*/
+    margin: 0 auto;/*centre le conteneur horizontalement*/
+    padding: 20px;/*ajoute un espace de 20px autour du conteneur*/
+    background-color: #fef6e6;/*couleur du conteneur*/
+    border-radius: 10px;/*arrondit les coins du conteneur*/
+}
+
+.formulaire h2 {
+    margin-bottom: 10px;/*ajoute un espace en bas du titre pour séparer des champ de saisie*/
+}
+
+.formulaire input {/* à l'intérieur du conteneur champ de saisie */
+    display: block;/*saisie bloc = occupe tt la largeur dispo*/
+    width: 90%;/*champ de saisie rempli la largeur du conteneur*/
+    padding: 10px;/*ajoute un espace intérieur à chaque champ de saisie pour les séparer*/
+    margin-bottom: 10px;/*ajoute un espace en bas de chaque champ de saisie pour les séparer.*/
+    border-radius: 5px;
+    border: 1px solid #ccc;/*définit une bordure de 1 pixel solide de couleur grise autour des champs de saisie.*/
+}
+
+.formulaire button { /*tt les bouton du formulaire*/
+    width: 100%;/*rempli la largeur du conteneur*/
+    padding: 10px;/*ajoute un espace intérieur de 10 pixels au bouton*/
+    background-color: #fab01f;/*définit la couleur de fond du bouton*/
+    border: none;/*supprime la bordure du bouto*/
+    border-radius: 5px;
+    color: white;/*définit la couleur du texte du bouton*/
+    font-size: 16px;/*définit la taille de police du texte du bouton*/
+    cursor: pointer;/*affiche un curseur de type pointeur lorsque l'utilisateur survole le bouton.*/
+}
+
+.formulaire button:hover {
+    background-color: #f7960a; /* style du bouton lorsque l'utilisateur survole avec la souris*/
+}/*couleur de fond lorsque le bouton est survolé.*/
+
+/* Styles pour la présentation des animaux */
+/* Styles généraux */
+body {
+    font-family: Arial, sans-serif;
+}
+
+/*.container {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+}*/
+
+.partie-gauche {
+    width: 250px;
+    /*background-color: #fef6e6;*/
+    padding: 20px;
+}
+
+.partie-droite {
+    flex: 1;
+    padding: 20px;
+}
+
+/* Styles pour le formulaire de recherche */
+.recherche {
+    margin-top: 20px;
+}
+
+.recherche h2 {
+    margin-bottom: 10px;
+}
+
+.recherche input[type="text"],
+.recherche button {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 8px;
+}
+
+.recherche button {
+    background-color: #fab01f;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+.recherche button:hover {
+    background-color: #f7960a;
+}
+
+.presentation-animaux {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.animal {
+    text-align: center;
+    background-color: #fef6e6;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.animal img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.animal h3 {
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.animal p {
+    margin-bottom: 10px;
+}
