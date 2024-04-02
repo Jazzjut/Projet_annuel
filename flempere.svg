@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg
+PUBLIC "-//W3C//DTD SVG 1.1//EN"
+       "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg viewBox="46 162 699 936" width="653px" height="774px" xmlns="http://www.w3.org/2000/svg" version="1.1">
+   <line x1="137" y1="777" x2="147" y2="777" style="stroke:#bbb;stroke-width:1;"/>
+   <line x1="599" y1="501" x2="609" y2="501" style="stroke:#bbb;stroke-width:1;"/>
+   <line x1="147" y1="777" x2="599" y2="501" style="stroke:#bbb;stroke-width:1;"/>
+   <line x1="144.5" y1="777" x2="140.96446609407" y2="780.53553390593" style="stroke:#bbb;stroke-width:2;"/>
+   <line x1="144.5" y1="777" x2="140.96446609407" y2="773.46446609407" style="stroke:#bbb;stroke-width:2;"/>
+   <line x1="604" y1="501" x2="600.46446609407" y2="504.53553390593" style="stroke:#bbb;stroke-width:2;"/>
+   <line x1="604" y1="501" x2="600.46446609407" y2="497.46446609407" style="stroke:#bbb;stroke-width:2;"/>
+   <line x1="609" y1="621" x2="599" y2="621" style="stroke:#0b0;stroke-width:1;"/>
+   <line x1="147" y1="657" x2="137" y2="657" style="stroke:#0b0;stroke-width:1;"/>
+   <line x1="599" y1="621" x2="147" y2="657" style="stroke:#0b0;stroke-width:1;"/>
+   <line x1="601.5" y1="621" x2="605.03553390593" y2="624.53553390593" style="stroke:#0b0;stroke-width:2;"/>
+   <line x1="601.5" y1="621" x2="605.03553390593" y2="617.46446609407" style="stroke:#0b0;stroke-width:2;"/>
+   <line x1="142" y1="657" x2="145.53553390593" y2="660.53553390593" style="stroke:#0b0;stroke-width:2;"/>
+   <line x1="142" y1="657" x2="145.53553390593" y2="653.46446609407" style="stroke:#0b0;stroke-width:2;"/>
+   <line x1="253" y1="891" x2="243" y2="891" style="stroke:#0bf;stroke-width:1;"/>
+   <line x1="147" y1="657" x2="137" y2="657" style="stroke:#0bf;stroke-width:1;"/>
+   <line x1="243" y1="891" x2="147" y2="657" style="stroke:#0bf;stroke-width:1;"/>
+   <line x1="245.5" y1="891" x2="249.03553390593" y2="894.53553390593" style="stroke:#0bf;stroke-width:2;"/>
+   <line x1="245.5" y1="891" x2="249.03553390593" y2="887.46446609407" style="stroke:#0bf;stroke-width:2;"/>
+   <line x1="142" y1="657" x2="145.53553390593" y2="660.53553390593" style="stroke:#0bf;stroke-width:2;"/>
+   <line x1="142" y1="657" x2="145.53553390593" y2="653.46446609407" style="stroke:#0bf;stroke-width:2;"/>
+   <line x1="253" y1="911" x2="243" y2="911" style="stroke:#c00;stroke-width:1;"/>
+   <line x1="230" y1="207" x2="240" y2="207" style="stroke:#c00;stroke-width:1;"/>
+   <line x1="243" y1="911" x2="230" y2="207" style="stroke:#c00;stroke-width:1;"/>
+   <line x1="245.5" y1="911" x2="249.03553390593" y2="914.53553390593" style="stroke:#c00;stroke-width:2;"/>
+   <line x1="245.5" y1="911" x2="249.03553390593" y2="907.46446609407" style="stroke:#c00;stroke-width:2;"/>
+   <line x1="235" y1="207" x2="231.46446609407" y2="210.53553390593" style="stroke:#c00;stroke-width:2;"/>
+   <line x1="235" y1="207" x2="231.46446609407" y2="203.46446609407" style="stroke:#c00;stroke-width:2;"/>
+   <line x1="65" y1="580" x2="55" y2="580" style="stroke:#c00;stroke-width:1;"/>
+   <line x1="51" y1="657" x2="61" y2="657" style="stroke:#c00;stroke-width:1;"/>
+   <line x1="55" y1="580" x2="51" y2="657" style="stroke:#c00;stroke-width:1;"/>
+   <line x1="57.5" y1="580" x2="61.035533905933" y2="583.53553390593" style="stroke:#c00;stroke-width:2;"/>
+   <line x1="57.5" y1="580" x2="61.035533905933" y2="576.46446609407" style="stroke:#c00;stroke-width:2;"/>
+   <line x1="56" y1="657" x2="52.464466094067" y2="660.53553390593" style="stroke:#c00;stroke-width:2;"/>
+   <line x1="56" y1="657" x2="52.464466094067" y2="653.46446609407" style="stroke:#c00;stroke-width:2;"/>
+   <line x1="128" y1="307" x2="138" y2="307" style="stroke:#b0b;stroke-width:1;"/>
+   <line x1="230" y1="207" x2="240" y2="207" style="stroke:#b0b;stroke-width:1;"/>
+   <line x1="138" y1="307" x2="230" y2="207" style="stroke:#b0b;stroke-width:1;"/>
+   <line x1="135.5" y1="307" x2="131.96446609407" y2="310.53553390593" style="stroke:#b0b;stroke-width:2;"/>
+   <line x1="135.5" y1="307" x2="131.96446609407" y2="303.46446609407" style="stroke:#b0b;stroke-width:2;"/>
+   <line x1="235" y1="207" x2="231.46446609407" y2="210.53553390593" style="stroke:#b0b;stroke-width:2;"/>
+   <line x1="235" y1="207" x2="231.46446609407" y2="203.46446609407" style="stroke:#b0b;stroke-width:2;"/>
+   <line x1="208" y1="412" x2="218" y2="412" style="stroke:#c00;stroke-width:1;"/>
+   <line x1="243" y1="711" x2="253" y2="711" style="stroke:#c00;stroke-width:1;"/>
+   <line x1="218" y1="412" x2="243" y2="711" style="stroke:#c00;stroke-width:1;"/>
+   <line x1="215.5" y1="412" x2="211.96446609407" y2="415.53553390593" style="stroke:#c00;stroke-width:2;"/>
+   <line x1="215.5" y1="412" x2="211.96446609407" y2="408.46446609407" style="stroke:#c00;stroke-width:2;"/>
+   <line x1="248" y1="711" x2="244.46446609407" y2="714.53553390593" style="stroke:#c00;stroke-width:2;"/>
+   <line x1="248" y1="711" x2="244.46446609407" y2="707.46446609407" style="stroke:#c00;stroke-width:2;"/>
+   <line x1="70" y1="432" x2="60" y2="432" style="stroke:#c00;stroke-width:1;"/>
+   <line x1="55" y1="500" x2="65" y2="500" style="stroke:#c00;stroke-width:1;"/>
+   <line x1="60" y1="432" x2="55" y2="500" style="stroke:#c00;stroke-width:1;"/>
+   <line x1="62.5" y1="432" x2="66.035533905933" y2="435.53553390593" style="stroke:#c00;stroke-width:2;"/>
+   <line x1="62.5" y1="432" x2="66.035533905933" y2="428.46446609407" style="stroke:#c00;stroke-width:2;"/>
+   <line x1="60" y1="500" x2="56.464466094067" y2="503.53553390593" style="stroke:#c00;stroke-width:2;"/>
+   <line x1="60" y1="500" x2="56.464466094067" y2="496.46446609407" style="stroke:#c00;stroke-width:2;"/>
+   <rect width="76" height="20" x="61" y="627" style="fill:#007;stroke:black;"/>
+   <text width="76" height="20" x="66" y="641" style="fill:#fff;" font-family="Arial" font-size="16px"> Client</text>
+   <rect width="76" height="20" x="61" y="647" style="fill:none;stroke:black;"/>
+   <text width="76" height="20" x="66" y="661" style="fill:black;" font-family="Arial" font-size="16px">mailC</text>
+   <rect width="76" height="20" x="61" y="667" style="fill:none;stroke:black;"/>
+   <text width="76" height="20" x="66" y="681" style="fill:black;" font-family="Arial" font-size="16px">pseudoC</text>
+   <rect width="76" height="20" x="61" y="687" style="fill:none;stroke:black;"/>
+   <text width="76" height="20" x="66" y="701" style="fill:black;" font-family="Arial" font-size="16px">nomC</text>
+   <rect width="76" height="20" x="61" y="707" style="fill:none;stroke:black;"/>
+   <text width="76" height="20" x="66" y="721" style="fill:black;" font-family="Arial" font-size="16px">prenomC</text>
+   <rect width="76" height="20" x="61" y="727" style="fill:none;stroke:black;"/>
+   <text width="76" height="20" x="66" y="741" style="fill:black;" font-family="Arial" font-size="16px">telC</text>
+   <rect width="76" height="20" x="61" y="747" style="fill:none;stroke:black;"/>
+   <text width="76" height="20" x="66" y="761" style="fill:black;" font-family="Arial" font-size="16px">mdpC</text>
+   <rect width="76" height="20" x="61" y="767" style="fill:none;stroke:black;"/>
+   <text width="76" height="20" x="66" y="781" style="fill:black;" font-family="Arial" font-size="16px">factureID</text>
+   <rect width="75" height="20" x="609" y="471" style="fill:#007;stroke:black;"/>
+   <text width="75" height="20" x="614" y="485" style="fill:#fff;" font-family="Arial" font-size="16px"> Facture</text>
+   <rect width="75" height="20" x="609" y="491" style="fill:#aea;stroke:black;"/>
+   <text width="75" height="20" x="614" y="505" style="fill:black;" font-family="Arial" font-size="16px">factureID</text>
+   <rect width="75" height="20" x="609" y="511" style="fill:none;stroke:black;"/>
+   <text width="75" height="20" x="614" y="525" style="fill:black;" font-family="Arial" font-size="16px">ncarte</text>
+   <rect width="75" height="20" x="609" y="531" style="fill:none;stroke:black;"/>
+   <text width="75" height="20" x="614" y="545" style="fill:black;" font-family="Arial" font-size="16px">dateExp</text>
+   <rect width="75" height="20" x="609" y="551" style="fill:none;stroke:black;"/>
+   <text width="75" height="20" x="614" y="565" style="fill:black;" font-family="Arial" font-size="16px">codeV</text>
+   <rect width="75" height="20" x="609" y="571" style="fill:none;stroke:black;"/>
+   <text width="75" height="20" x="614" y="585" style="fill:black;" font-family="Arial" font-size="16px">montant</text>
+   <rect width="75" height="20" x="609" y="591" style="fill:none;stroke:black;"/>
+   <text width="75" height="20" x="614" y="605" style="fill:black;" font-family="Arial" font-size="16px">dateDon</text>
+   <rect width="75" height="20" x="609" y="611" style="fill:none;stroke:black;"/>
+   <text width="75" height="20" x="614" y="625" style="fill:black;" font-family="Arial" font-size="16px">mailC</text>
+   <rect width="138" height="20" x="253" y="681" style="fill:#007;stroke:black;"/>
+   <text width="138" height="20" x="258" y="695" style="fill:#fff;" font-family="Arial" font-size="16px"> FormDemandeA</text>
+   <rect width="138" height="20" x="253" y="701" style="fill:#aea;stroke:black;"/>
+   <text width="138" height="20" x="258" y="715" style="fill:black;" font-family="Arial" font-size="16px">formDemandeAID</text>
+   <rect width="138" height="20" x="253" y="721" style="fill:none;stroke:black;"/>
+   <text width="138" height="20" x="258" y="735" style="fill:black;" font-family="Arial" font-size="16px">dateDemandeA</text>
+   <rect width="138" height="20" x="253" y="741" style="fill:none;stroke:black;"/>
+   <text width="138" height="20" x="258" y="755" style="fill:black;" font-family="Arial" font-size="16px">raisonDemandeA</text>
+   <rect width="138" height="20" x="253" y="761" style="fill:none;stroke:black;"/>
+   <text width="138" height="20" x="258" y="775" style="fill:black;" font-family="Arial" font-size="16px">Logement</text>
+   <rect width="138" height="20" x="253" y="781" style="fill:none;stroke:black;"/>
+   <text width="138" height="20" x="258" y="795" style="fill:black;" font-family="Arial" font-size="16px">Adresse</text>
+   <rect width="138" height="20" x="253" y="801" style="fill:none;stroke:black;"/>
+   <text width="138" height="20" x="258" y="815" style="fill:black;" font-family="Arial" font-size="16px">nbEnf</text>
+   <rect width="138" height="20" x="253" y="821" style="fill:none;stroke:black;"/>
+   <text width="138" height="20" x="258" y="835" style="fill:black;" font-family="Arial" font-size="16px">nbHSeul</text>
+   <rect width="138" height="20" x="253" y="841" style="fill:none;stroke:black;"/>
+   <text width="138" height="20" x="258" y="855" style="fill:black;" font-family="Arial" font-size="16px">ext</text>
+   <rect width="138" height="20" x="253" y="861" style="fill:none;stroke:black;"/>
+   <text width="138" height="20" x="258" y="875" style="fill:black;" font-family="Arial" font-size="16px">etatDemandeA</text>
+   <rect width="138" height="20" x="253" y="881" style="fill:none;stroke:black;"/>
+   <text width="138" height="20" x="258" y="895" style="fill:black;" font-family="Arial" font-size="16px">mailC</text>
+   <rect width="138" height="20" x="253" y="901" style="fill:none;stroke:black;"/>
+   <text width="138" height="20" x="258" y="915" style="fill:black;" font-family="Arial" font-size="16px">petID</text>
+   <rect width="103" height="20" x="65" y="470" style="fill:#007;stroke:black;"/>
+   <text width="103" height="20" x="70" y="484" style="fill:#fff;" font-family="Arial" font-size="16px"> FormMiseA</text>
+   <rect width="103" height="20" x="65" y="490" style="fill:#aea;stroke:black;"/>
+   <text width="103" height="20" x="70" y="504" style="fill:black;" font-family="Arial" font-size="16px">formMiseAID</text>
+   <rect width="103" height="20" x="65" y="510" style="fill:none;stroke:black;"/>
+   <text width="103" height="20" x="70" y="524" style="fill:black;" font-family="Arial" font-size="16px">dateMiseA</text>
+   <rect width="103" height="20" x="65" y="530" style="fill:none;stroke:black;"/>
+   <text width="103" height="20" x="70" y="544" style="fill:black;" font-family="Arial" font-size="16px">raisonMiseA</text>
+   <rect width="103" height="20" x="65" y="550" style="fill:none;stroke:black;"/>
+   <text width="103" height="20" x="70" y="564" style="fill:black;" font-family="Arial" font-size="16px">etatMiseA</text>
+   <rect width="103" height="20" x="65" y="570" style="fill:none;stroke:black;"/>
+   <text width="103" height="20" x="70" y="584" style="fill:black;" font-family="Arial" font-size="16px">mailC</text>
+   <rect width="55" height="20" x="73" y="177" style="fill:#007;stroke:black;"/>
+   <text width="55" height="20" x="78" y="191" style="fill:#fff;" font-family="Arial" font-size="16px"> image</text>
+   <rect width="55" height="20" x="73" y="197" style="fill:#aea;stroke:black;"/>
+   <text width="55" height="20" x="78" y="211" style="fill:black;" font-family="Arial" font-size="16px">id</text>
+   <rect width="55" height="20" x="73" y="217" style="fill:none;stroke:black;"/>
+   <text width="55" height="20" x="78" y="231" style="fill:black;" font-family="Arial" font-size="16px">nom</text>
+   <rect width="55" height="20" x="73" y="237" style="fill:none;stroke:black;"/>
+   <text width="55" height="20" x="78" y="251" style="fill:black;" font-family="Arial" font-size="16px">taille</text>
+   <rect width="55" height="20" x="73" y="257" style="fill:none;stroke:black;"/>
+   <text width="55" height="20" x="78" y="271" style="fill:black;" font-family="Arial" font-size="16px">type</text>
+   <rect width="55" height="20" x="73" y="277" style="fill:none;stroke:black;"/>
+   <text width="55" height="20" x="78" y="291" style="fill:black;" font-family="Arial" font-size="16px">bin</text>
+   <rect width="55" height="20" x="73" y="297" style="fill:none;stroke:black;"/>
+   <text width="55" height="20" x="78" y="311" style="fill:black;" font-family="Arial" font-size="16px">petID</text>
+   <rect width="138" height="20" x="240" y="177" style="fill:#007;stroke:black;"/>
+   <text width="138" height="20" x="245" y="191" style="fill:#fff;" font-family="Arial" font-size="16px"> Pet</text>
+   <rect width="138" height="20" x="240" y="197" style="fill:#aea;stroke:black;"/>
+   <text width="138" height="20" x="245" y="211" style="fill:black;" font-family="Arial" font-size="16px">petID</text>
+   <rect width="138" height="20" x="240" y="217" style="fill:none;stroke:black;"/>
+   <text width="138" height="20" x="245" y="231" style="fill:black;" font-family="Arial" font-size="16px">prenomP</text>
+   <rect width="138" height="20" x="240" y="237" style="fill:none;stroke:black;"/>
+   <text width="138" height="20" x="245" y="251" style="fill:black;" font-family="Arial" font-size="16px">espece</text>
+   <rect width="138" height="20" x="240" y="257" style="fill:none;stroke:black;"/>
+   <text width="138" height="20" x="245" y="271" style="fill:black;" font-family="Arial" font-size="16px">sexeP</text>
+   <rect width="138" height="20" x="240" y="277" style="fill:none;stroke:black;"/>
+   <text width="138" height="20" x="245" y="291" style="fill:black;" font-family="Arial" font-size="16px">locaP</text>
+   <rect width="138" height="20" x="240" y="297" style="fill:none;stroke:black;"/>
+   <text width="138" height="20" x="245" y="311" style="fill:black;" font-family="Arial" font-size="16px">description</text>
+   <rect width="138" height="20" x="240" y="317" style="fill:none;stroke:black;"/>
+   <text width="138" height="20" x="245" y="331" style="fill:black;" font-family="Arial" font-size="16px">race</text>
+   <rect width="138" height="20" x="240" y="337" style="fill:none;stroke:black;"/>
+   <text width="138" height="20" x="245" y="351" style="fill:black;" font-family="Arial" font-size="16px">ageP</text>
+   <rect width="138" height="20" x="240" y="357" style="fill:none;stroke:black;"/>
+   <text width="138" height="20" x="245" y="371" style="fill:black;" font-family="Arial" font-size="16px">etatP</text>
+   <rect width="138" height="20" x="240" y="377" style="fill:none;stroke:black;"/>
+   <text width="138" height="20" x="245" y="391" style="fill:black;" font-family="Arial" font-size="16px">formMiseAID</text>
+   <rect width="138" height="20" x="240" y="397" style="fill:none;stroke:black;"/>
+   <text width="138" height="20" x="245" y="411" style="fill:black;" font-family="Arial" font-size="16px">formDemandeAID</text>
+   <rect width="138" height="20" x="70" y="342" style="fill:#007;stroke:black;"/>
+   <text width="138" height="20" x="75" y="356" style="fill:#fff;" font-family="Arial" font-size="16px"> RDV</text>
+   <rect width="138" height="20" x="70" y="362" style="fill:#aea;stroke:black;"/>
+   <text width="138" height="20" x="75" y="376" style="fill:black;" font-family="Arial" font-size="16px">numRDV</text>
+   <rect width="138" height="20" x="70" y="382" style="fill:none;stroke:black;"/>
+   <text width="138" height="20" x="75" y="396" style="fill:black;" font-family="Arial" font-size="16px">dateRDV</text>
+   <rect width="138" height="20" x="70" y="402" style="fill:none;stroke:black;"/>
+   <text width="138" height="20" x="75" y="416" style="fill:black;" font-family="Arial" font-size="16px">formDemandeAID</text>
+   <rect width="138" height="20" x="70" y="422" style="fill:none;stroke:black;"/>
+   <text width="138" height="20" x="75" y="436" style="fill:black;" font-family="Arial" font-size="16px">formMiseAID</text>
+</svg>
